@@ -1,0 +1,13 @@
+{
+  "name": "carbon-consumption-estimated",
+  "description": "Estimate the energy, CO₂ and water of your Claude Code usage.",
+  "owner": {
+    "name": "Martijn"
+  },
+  "plugins": [
+    {
+      "name": "carbon-consumption-estimated",
+      "source": "./"
+    }
+  ]
+}

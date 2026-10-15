@@ -1,0 +1,34 @@
+{
+  "name": "carbon-consumption-estimated",
+  "version": "0.1.0",
+  "description": "Estimate the energy, CO₂ and water of your Claude Code usage with the EcoLogits method: live in the status line, and per day, month and model with /carbon.",
+  "author": {
+    "name": "Martijn",
+    "url": "https://martijnwip.nl"
+  },
+  "license": "MIT AND MPL-2.0",
+  "keywords": ["carbon", "energy", "co2", "water", "sustainability", "ecologits"],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "language": {
+      "type": "string",
+      "title": "Language",
+      "description": "auto, en or nl. auto follows Claude Code's language setting, then the system locale.",
+      "default": "auto",
+      "options": ["auto", "en", "nl"]
+    },
+    "zone": {
+      "type": "string",
+      "title": "Electricity mix",
+      "description": "Whose electricity mix to count CO₂ and water with. USA is where EcoLogits places Anthropic's data centres; WOR is the world average.",
+      "default": "USA",
+      "options": ["USA", "WOR", "IRL", "GBR", "NLD", "DEU", "FRA", "SWE", "CAN"]
+    },
+    "statusLine": {
+      "type": "boolean",
+      "title": "Status line",
+      "description": "Show this session's estimated energy and CO₂ in the status line.",
+      "default": true
+    }
+  }
+}
